@@ -3,223 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganga Bishwakarma | Official Personal Brand</title>
+    <meta name="description" content="Official website of Ganga Bishwakarma (Merina). Host of RAW TALK, Winner of Miss Bishwakarma Purwanchal 2016.">
     
-    <title>Ganga Bishwakarma (Merina) | Official Website</title>
-    <meta name="description" content="Official website of Ganga Bishwakarma (Merina). Host of RAW TALK, Winner of Miss Bishwakarma Purwanchal 2016, and Founder of Merry El's.">
     <link rel="icon" type="image/png" href="images/merina_favicon.png">
-
-    <meta property="og:title" content="Ganga Bishwakarma (Merina)">
-    <meta property="og:description" content="Host of RAW TALK | Winner of Miss Bishwakarma Purwanchal 2016">
-    <meta property="og:image" content="images/merina.jpg">
-    <meta property="og:url" content="https://www.gangabishwakarma.com.np">
-    <meta property="og:type" content="website">
-
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        /* GOLDEN RATIO CONSTANT: 1.618 */
-        :root {
-            --bg: #F9F9F9;
-            --charcoal: #2D2D2D;
-            --gold: #D4AF37;
-            --white: #FFFFFF;
-            --phi: 1.618;
-            --spacing: 1.618rem;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background-color: var(--bg);
-            color: var(--charcoal);
-            font-family: 'Inter', sans-serif;
-            line-height: var(--phi);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: calc(var(--spacing) * 2) 20px;
-        }
-
-        .wrapper {
-            max-width: 450px; /* Golden ratio constrained width */
-            width: 100%;
-            text-align: center;
-            animation: fadeIn 1.2s cubic-bezier(0.39, 0.575, 0.565, 1);
-        }
-
-        /* HEADER SECTION */
-        .profile-img {
-            width: calc(80px * var(--phi));
-            height: calc(80px * var(--phi));
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--gold);
-            padding: 5px;
-            margin-bottom: var(--spacing);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: calc(1.2rem * var(--phi));
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            color: var(--gold);
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-bottom: calc(var(--spacing) * 0.5);
-            text-transform: uppercase;
-        }
-
-        .bio {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: calc(var(--spacing) * 1.5);
-            padding: 0 10px;
-        }
-
-        /* BUTTONS & LINKS */
-        .section-title {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #AAA;
-            margin: calc(var(--spacing) * 1.2) 0 calc(var(--spacing) * 0.6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .section-title::before, .section-title::after {
-            content: ""; height: 1px; width: 30px; background: #EEE; margin: 0 10px;
-        }
-
-        .link-card {
-            display: flex;
-            align-items: center;
-            background: var(--white);
-            color: var(--charcoal);
-            text-decoration: none;
-            padding: 1.1rem;
-            margin-bottom: 0.8rem;
-            border-radius: 15px;
-            border: 1px solid #EEE;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .link-card i {
-            font-size: 1.2rem;
-            width: 30px;
-            margin-right: 15px;
-            color: var(--gold);
-        }
-
-        .link-card span {
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .link-card:hover {
-            transform: scale(1.03);
-            border-color: var(--gold);
-            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
-        }
-
-        /* WHATSAPP SPECIFIC BUTTON */
-        .whatsapp-btn {
-            background: #25D366;
-            color: white;
-            border: none;
-        }
-        .whatsapp-btn i { color: white; }
-
-        /* FOOTER */
-        footer {
-            margin-top: calc(var(--spacing) * 2);
-            font-size: 0.75rem;
-            color: #BBB;
-            letter-spacing: 1px;
-        }
-
-        /* ANIMATIONS */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* RESPONSIVE RESPONSIVENESS */
-        @media (max-width: 480px) {
-            body { padding-top: 20px; }
-            h1 { font-size: 1.6rem; }
-        }
-    </style>
 </head>
 <body>
+    <canvas id="canvas1"></canvas>
 
     <div class="wrapper">
-        <img src="images/merina.png" alt="Ganga Bishwakarma" class="profile-img">
-        <h1>Ganga Bishwakarma</h1>
-        <div class="subtitle">Merina</div>
-        <p class="bio">Winner of Miss Bishwakarma Purwanchal 2016 • Host of RAW TALK • Entrepreneur • Beauty Pageant Choreographer</p>
+        <header>
+            <img src="images/merina.jpg" alt="Ganga Bishwakarma" class="profile-img">
+            <h1>Ganga Bishwakarma</h1>
+            <div class="subtitle">Merina</div>
+        </header>
 
-        <div class="section-title">Connect with Me</div>
+        <section class="about-section">
+            <p><strong>The Personality:</strong> Winner of Miss Bishwakarma Purwanchal 2016 and Miss Damak 1st Runner-up. I specialize in pageant choreography and personality development, helping others find their voice and stage presence.</p>
+            <p><strong>The Creative:</strong> Host of <em>RAW TALK</em> and founder of <em>Merry El’s - Pinch Of Style</em>. I am a disciplined creator focused on honest conversations and curated lifestyle aesthetics.</p>
+            <p><strong>The Resilience:</strong> Beyond the stage, my experience in patient care and social service has shaped my calm, adaptable, and empathetic worldview.</p>
+        </section>
+
+        <div class="section-title">Personal Profiles</div>
         
-        <a href="https://www.youtube.com/@merinabishwakarma" class="link-card" target="_blank">
-            <i class="fab fa-youtube"></i>
-            <span>RAW TALK on YouTube</span>
+        <a href="https://www.youtube.com/@merinabishwakarma" class="link-card yt" target="_blank">
+            <i class="fab fa-youtube"></i><span>YouTube / RAW TALK</span>
+        </a>
+        <a href="https://www.instagram.com/merina.bishwakarma/" class="link-card ig" target="_blank">
+            <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@merina.bishwakarma" class="link-card tt" target="_blank">
+            <i class="fab fa-tiktok"></i><span>TikTok</span>
+        </a>
+        <a href="https://www.facebook.com/merina.bishwakarma" class="link-card fb" target="_blank">
+            <i class="fab fa-facebook-f"></i><span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ganga-bishwakarma/" class="link-card li" target="_blank">
+            <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+        </a>
+        <a href="mailto:contact@gangabishwakarma.com.np" class="link-card mail">
+            <i class="fas fa-envelope"></i><span>Email Me</span>
+        </a>
+        <a href="https://wa.me/9779817928622" class="link-card wa" target="_blank">
+            <i class="fab fa-whatsapp"></i><span>WhatsApp Personal</span>
         </a>
 
-        <a href="https://www.instagram.com/merina.bishwakarma/" class="link-card" target="_blank">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
+        <div class="section-title">Merry El’s - Pinch Of Style</div>
+        
+        <a href="https://www.instagram.com/meryels.pinchofstyle/" class="link-card ig" target="_blank">
+            <i class="fab fa-instagram"></i><span>Business Instagram</span>
         </a>
-
-        <a href="https://www.tiktok.com/@merina.bishwakarma" class="link-card" target="_blank">
-            <i class="fab fa-tiktok"></i>
-            <span>TikTok</span>
+        <a href="https://www.facebook.com/meryels.pinchofstyle" class="link-card fb" target="_blank">
+            <i class="fab fa-facebook-f"></i><span>Business Facebook</span>
         </a>
-
-        <a href="https://www.facebook.com/merina.bishwakarma" class="link-card" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            <span>Facebook</span>
+        <a href="https://www.tiktok.com/@meryelspinchofstyle" class="link-card tt" target="_blank">
+            <i class="fab fa-tiktok"></i><span>Business TikTok</span>
         </a>
-
-        <a href="https://www.linkedin.com/in/ganga-bishwakarma/" class="link-card" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-            <span>LinkedIn Professional</span>
-        </a>
-
-        <a href="https://wa.me/9779817928622?text=Hi%20Merina,%20I%20visited%20your%20website%20and%20wanted%20to%20connect!" class="link-card whatsapp-btn" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp Me</span>
-        </a>
-
-        <div class="section-title">My Business</div>
-
-        <a href="https://www.instagram.com/meryels.pinchofstyle/" class="link-card" target="_blank">
-            <i class="fas fa-gem"></i>
-            <span>Merry El’s - Instagram</span>
-        </a>
-
-        <a href="https://www.facebook.com/meryels.pinchofstyle" class="link-card" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-            <span>Merry El’s - Facebook</span>
-        </a>
-
-        <a href="https://wa.me/9779761000626" class="link-card" target="_blank" style="border-left: 4px solid #25D366;">
-            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
-            <span>Merry El's Business WhatsApp</span>
+        <a href="https://wa.me/9779761000626" class="link-card wa" target="_blank">
+            <i class="fab fa-whatsapp"></i><span>Business WhatsApp</span>
         </a>
 
         <footer>
@@ -228,18 +72,6 @@
         </footer>
     </div>
 
-    <script>
-        // Automatic Year for Footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Register a simple Service Worker for Caching (PWA feature)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js').catch(() => {
-                    console.log('Static site mode enabled.');
-                });
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
