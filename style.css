@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-    max-width: 550px; /* Slightly wider for story reading */
+    max-width: 500px;
     width: 90%;
     text-align: center;
     padding: 60px 0;
@@ -32,79 +32,91 @@ body {
 }
 
 .profile-img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 3px solid var(--gold);
+    border: 2px solid var(--gold);
     padding: 5px;
     margin-bottom: 20px;
 }
 
-h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin: 0; }
-.subtitle { color: var(--gold); letter-spacing: 3px; font-weight: 600; margin-bottom: 30px; text-transform: uppercase; font-size: 0.8rem;}
+h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 0; }
+.subtitle { color: var(--gold); letter-spacing: 2px; font-weight: 600; margin-bottom: 30px; text-transform: uppercase; font-size: 0.75rem; }
 
-/* THE STORY TEXT STYLE */
 .story-container {
     font-family: 'Lora', serif;
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.7;
     color: #444;
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 40px;
     background: rgba(255, 255, 255, 0.6);
-    padding: 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 25px;
+    border-radius: 15px;
 }
 
-.story-container p { margin-bottom: 20px; }
-.story-container a { color: var(--gold); font-weight: 600; text-decoration: none; border-bottom: 1px dotted var(--gold); }
+.story-container p { margin-bottom: 15px; }
+.story-container a { color: var(--gold); text-decoration: none; font-weight: 600; }
 
 blockquote {
     font-style: italic;
-    border-left: 4px solid var(--gold);
-    padding-left: 20px;
-    margin: 30px 0;
+    border-left: 3px solid var(--gold);
+    padding-left: 15px;
+    margin: 20px 0;
     color: var(--charcoal);
-    font-weight: 500;
 }
 
 .section-title {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #999;
-    margin: 40px 0 15px;
+    margin: 35px 0 15px;
 }
 
-/* LINK CARDS */
 .link-card {
     display: flex;
     align-items: center;
     background: var(--white);
     color: var(--charcoal);
     text-decoration: none;
-    padding: 16px;
-    margin-bottom: 12px;
-    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     font-weight: 500;
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.3s;
     border: 1px solid #EEE;
+    font-size: 0.9rem;
 }
 
 .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     color: white !important;
 }
 
-/* Official Colors on Hover */
-.fb:hover { background-color: #1877F2; }
-.ig:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-.yt:hover { background-color: #FF0000; }
-.wa:hover { background-color: #25D366; }
-.mail:hover { background-color: var(--charcoal); }
+/* Hover Colors */
+.fb:hover { background-color: #1877F2; border-color: #1877F2; }
+.ig:hover { background: linear-gradient(45deg, #f09433, #bc1888); border-color: transparent; }
+.tt:hover { background-color: #000; border-color: #000; }
+.li:hover { background-color: #0077B5; border-color: #0077B5; }
+.yt:hover { background-color: #FF0000; border-color: #FF0000; }
+.wa:hover { background-color: #25D366; border-color: #25D366; }
+.mail:hover { background-color: var(--charcoal); border-color: var(--charcoal); }
 
-.link-card i { font-size: 1.3rem; width: 35px; margin-right: 10px; }
+.link-card i { font-size: 1.2rem; width: 30px; margin-right: 10px; }
 
-footer { margin-top: 50px; font-size: 0.8rem; color: #AAA; }
+.hunate-support {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px dashed var(--gold);
+    border-radius: 10px;
+}
+
+.hunate-support p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+footer { margin-top: 50px; font-size: 0.75rem; color: #AAA; }
