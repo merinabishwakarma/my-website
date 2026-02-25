@@ -5,6 +5,10 @@
     --white: #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Friendly & Modern */
@@ -53,6 +57,7 @@ h1, h2, h3 {
     border: 2px solid var(--gold);
     padding: 5px;
     margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(212, 175, 87, 0.2); /* Soft gold glow */
 }
 
 h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 0; }
