@@ -1,18 +1,33 @@
 :root {
-    --bg: #F9F9F9;
-    --charcoal: #2D2D2D;
+    --bg: #FDFDFD; /* Slightly softer white */
+    --charcoal: #333333;
     --gold: #D4AF37;
     --white: #FFFFFF;
-    --phi: 1.618;
 }
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Friendly & Modern */
     background-color: var(--bg);
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    color: var(--charcoal);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant & Luxury */
+    font-weight: 700;
+}
+
+.subtitle { 
+    font-family: 'Poppins', sans-serif;
+    color: var(--gold); 
+    letter-spacing: 2px; 
+    font-weight: 500; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    font-size: 0.75rem; 
 }
 
 #canvas1 {
@@ -90,37 +105,40 @@ h1 { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 0; }
 }
 
 .story-container {
-    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif; /* Changed from Lora to Poppins */
+    font-weight: 300; /* Light weight looks more aesthetic */
     text-align: left;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #444;
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 40px;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 25px;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
 .story-container h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    color: var(--gold);
-    margin-top: 30px;
+    font-size: 1.4rem;
+    color: var(--charcoal); /* Darker for better contrast */
+    margin-top: 35px;
     margin-bottom: 15px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-    display: inline-block;
-    padding-bottom: 5px;
+    font-style: italic; /* Makes it look more feminine/high-end */
 }
 
 .story-container p { margin-bottom: 15px; }
 .story-container a { color: var(--gold); text-decoration: none; font-weight: 600; }
 
 blockquote {
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    border-left: 3px solid var(--gold);
-    padding-left: 15px;
-    margin: 20px 0;
+    font-size: 1.1rem;
+    border-left: 2px solid var(--gold);
+    padding: 10px 25px;
+    margin: 30px 0;
     color: var(--charcoal);
+    background: rgba(212, 175, 55, 0.03);
 }
 
 .section-title {
